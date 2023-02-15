@@ -7,88 +7,43 @@
 </head>
 
 <body>
-	<form action="submit.html" method="post"> 
- 
-    <label for="name">Name</label>
- 
-    <input type="text" placeholder="Name" id="name">
- 
-<br><br>
- 
-  
- 
-	<!-- Email -->
- 
-	<label for="email">Email</label>
- 
-	<input type="email" placeholder="Email" id="email" required>
- 
- 
- 
-	<!-- gender -->
- 
-<p>Gender</p>
- 
-<label for="gender" >Male</label>
- 
-	<input type="radio" name="gender" value="male" id="male" required>
- 
-<label for="gender" >Female</label>
- 
-    <input type="radio" name="gender" value="female" id="female">
- 
-    <br><br>
- 
- 
- 
-	 <!-- car brands -->
- 
- 
- 
-<label for="cars">Car Brands</label>
- 
-<select name="Car Brands" id="cars"><br>
- 
-	<option value="BMW">BMW</option>
- 
-	<option value="Audi">Audi</option>
- 
-	<option value="Mercedez">Mercedez</option>
- 
-</select>
- 
- <br><br>
- 
-<!-- age -->
- 
-	<label for="age">Age</label>
- 
-	<input type="number" id="carage" placeholder="your age"required> 
- 
-<br><br>
- 
- 
- 
-<!-- age -->
- 
-	<label for="dob">DOP</label>
- 
-	<input type="date" id="dop"required> <br><br>
- 
-	 
- 
-	<!-- password -->
- 
-	<label for="password">Password</label>
- 
-	<input type="password"id="password" required> <br><br>
- 
- 
- 
-    <!-- submit -->
- 
-	<button type="submit">submit</button><script type="text/javascript" src="./script.js">
-</script>
+
+	<form method="post" target="_blank">
+        <div><label for="name">Name</label>
+        <input type="text" required id="name"></div>
+        <div><label for="email">Email*</label>
+        <input type="email" id="email" required></div>
+        <div>
+            <label for="gender">Gender*</label>
+            <input type="radio" id="gender" name="gender" required>Male
+            <input type="radio" id="gender" name="gender" required>Female
+        </div>
+        <div>
+            <label for="cars">Car Brands</label>
+            <select id="cars">
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="mercedez">Mercedez</option>
+            </select>
+        </div>
+        <div>
+            <label for="carage">Car Age*</label>
+            <input type="number" id="carage" required min="0">
+        </div>
+        <div>
+            <label for="dop">Date of Purchase(dop)*</label>
+            <input type="date" required id="dop">
+        </div>
+        <div>
+            <label for="password">Password*</label>
+            <input type="password" required id="password">
+        </div>
+        <div>
+            <button type="submit" value="Submit">Submit
+        </div>
+    </form>
+
+	</script>
 
 </body>
 
